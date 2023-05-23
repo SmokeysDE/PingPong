@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ping Pong Spiel</title>
+	<style>
+		#spielfeld {
+			width: 600px;
+			height: 400px;
+			margin: 0 auto;
+			border: 2px solid black;
+			position: relative;
+		}
+		#ball {
+			width: 20px;
+			height: 20px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+			top: 190px;
+			left: 290px;
+		}
+		#spieler1 {
+			width: 10px;
+			height: 80px;
+			background-color: blue;
+			position: absolute;
+			top: 160px;
+			left: 10px;
+		}
+		#spieler2 {
+			width: 10px;
+			height: 80px;
+			background-color: green;
+			position: absolute;
+			top: 160px;
+			right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="spielfeld">
+		<div id="ball"></div>
+		<div id="spieler1"></div>
+		<div id="spieler2"></div>
+	</div>
+	<script src="pong.js"></script>
+</body>
+</html>
